@@ -32,6 +32,8 @@ Run the decline checker against some index ETFs:
 
     python stock-price-decline-checker.py -s QQQ,SPY,DIA -d 50 -p 5 -v
 
+Example output:
+
 <pre>
 Symbols: ['QQQ', 'SPY', 'DIA']
 Percent: 5.0
