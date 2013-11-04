@@ -4,6 +4,10 @@ Stock Price Decline Checker
 Checks a list of stocks to see if the price has declined a certain percentage
 from its maximum price over a specified number of days.
 
+The goal is to primarily identify index ETFs that have declined substantially
+in price from their maximum values over the past few weeks or months, which
+could potentially signal a buying opportunity.
+
 ## Author
 
 <a href="http://www.nicholaskuechler.com/">Nicholas Kuechler</a>
@@ -56,4 +60,27 @@ Index stock: DIA
 - max value over 50 days: 156.5
 - most recent close: 155.86
 - percent change: -0.41%
+</pre>
+
+The stock price decline checker will display an alert if the stock has dropped
+in price greater than the percentage specified:
+
+    python stock-price-decline-checker.py -s GOOG,FB -d 50 -p 7.5
+
+Note how FB now has triggered an alert since it has fallen over 7.5%:
+
+<pre>
+Checking for a 7.5% decline over the past 50 days
+
+Index stock: GOOG
+- max value over 50 days: 1036.24
+- most recent close: 1027.04
+- percent change: -0.89%
+
+Index stock: FB
+- max value over 50 days: 54.22
+- most recent close: 49.75
+- percent change: -8.24%
+
+ALERT! FB has dropped -8.24% over the last 50 days
 </pre>
