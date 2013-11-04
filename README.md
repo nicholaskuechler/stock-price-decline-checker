@@ -15,7 +15,7 @@ could potentially signal a buying opportunity.
 ## Requirements
 
 * argparse
-* matplotlib - to pull the stock quote data from Yahoo! Finance
+* matplotlib - used to pull the stock quote data from Yahoo! Finance
 
 You can install them with pip:
 
