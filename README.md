@@ -32,6 +32,20 @@ Show help menu:
 
     python stock-price-decline-checker.py -h
 
+<pre>
+usage: stock-price-decline-checker.py [-h] [-s SYMBOLS] [-p PERCENT] [-d DAYS]
+                                      [-v]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SYMBOLS, --symbols SYMBOLS
+                        Comma separate list of symbols. Example: SPY,QQQ
+  -p PERCENT, --percent PERCENT
+                        Percent change. Example: 5
+  -d DAYS, --days DAYS  Number of days. Example: 50
+  -v, --verbose         Increase output verbosity
+</pre>
+
 Run the decline checker against some index ETFs:
 
     python stock-price-decline-checker.py -s QQQ,SPY,DIA -d 50 -p 5 -v
