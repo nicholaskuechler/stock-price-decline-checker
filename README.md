@@ -67,7 +67,7 @@ in price greater than the percentage specified:
 
     python stock-price-decline-checker.py -s GOOG,FB -d 50 -p 7.5
 
-Note how FB now has triggered an alert since it has fallen over 7.5%:
+Note how FB has now triggered an alert since it has fallen over 7.5%:
 
 <pre>
 Checking for a 7.5% decline over the past 50 days
