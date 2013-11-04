@@ -4,7 +4,7 @@ Stock Price Decline Checker
 Checks a list of stocks to see if the price has declined a certain percentage
 from its maximum price over a specified number of days.
 
-The goal is to primarily identify index ETFs that have declined substantially
+The goal is to identify primarily index ETFs that have declined substantially
 in price from their maximum values over the past few weeks or months, which
 could potentially signal a buying opportunity.
 
