@@ -33,7 +33,7 @@ def main(symbols, percent, days, verbose):
 
     for ticker in symbols:
         ticker = ticker.upper()
-        print "Index stock: %s" % ticker
+        print "Stock: %s" % ticker
 
         start_date = datetime.datetime.now() + datetime.timedelta(days)
         end_date = datetime.datetime.now()
