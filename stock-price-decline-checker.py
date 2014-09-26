@@ -3,7 +3,7 @@
 import datetime
 import argparse
 
-from matplotlib.finance import quotes_historical_yahoo
+from matplotlib.finance import quotes_historical_yahoo_ochl
 
 
 def rate_of_return(start, end):
@@ -38,10 +38,10 @@ def main(symbols, percent, days, verbose):
         start_date = datetime.datetime.now() + datetime.timedelta(days)
         end_date = datetime.datetime.now()
 
-        quotes_objects = quotes_historical_yahoo(ticker,
-                                                 start_date,
-                                                 end_date,
-                                                 asobject=True)
+        quotes_objects = quotes_historical_yahoo_ochl(ticker,
+                                                      start_date,
+                                                      end_date,
+                                                      asobject=True)
 
         max_value = round(float(max(quotes_objects.close)), 5)
         print "- max value over %d days: %s" % (abs(days), max_value)
