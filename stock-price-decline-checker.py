@@ -54,6 +54,11 @@ def main(symbols, percent, days, verbose):
                                ), 2)
         print "- percent change: %s%%" % percent_change
 
+        target_price = max_value - (max_value * (percent / 100.0))
+
+        print "- target price: %s (%s%% below %s)" % (target_price, percent,
+                                                      max_value)
+
         if percent_change < -percent:
             print
             print "ALERT! %s has dropped %s%% " \
